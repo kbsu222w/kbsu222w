@@ -15,6 +15,7 @@ footer {
  width: 100%;
  box-sizing: border-box;
  background-color: #C0C0C0;
+ text-align: center;
 }
 .container {
 box-sizing: border-box;
@@ -64,6 +65,7 @@ tr:nth-child(odd) {
 .tablitsa {
   margin-left: 20px;
 }
+
 
 
 
