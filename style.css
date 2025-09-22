@@ -8,17 +8,14 @@ a {
 
 header {
  width: 100%;
- box-sizing: border-box;
  background-color: #ccebfd;
 }
 footer {
  width: 100%;
- box-sizing: border-box;
  background-color: #C0C0C0;
  text-align: center;
 }
 .container {
-box-sizing: border-box;
 width: 100%;
 }
 .menu {
@@ -67,6 +64,7 @@ tr:nth-child(odd) {
   margin-left: 20px;
   boder: 1px;
 }
+
 
 
 
