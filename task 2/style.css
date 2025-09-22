@@ -36,6 +36,7 @@ width: 100%;
 .menu_list {
  display: flex;
  list-style: none;
+ font-weight: bold;
 }
 
 .menu_list-link {
@@ -58,6 +59,7 @@ tr:nth-child(odd) {
 .tablitsa {
   margin-left: 20px;
 }
+
 
 
 
