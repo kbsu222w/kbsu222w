@@ -1,13 +1,12 @@
 
 
 .container {
- max-width: 960px;
  padding: 0 15px;
  margin: 0 auto;
  background-color: #ccebfd;
 }
 .header {
- padding-top: 30px;
+ 
 }
 .inner {
  display: flex;
@@ -33,6 +32,7 @@
  cursor: pointer;
  transition: all 0.3s;
 }
+
 
 
 
