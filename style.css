@@ -19,13 +19,21 @@
  font-weight: 900;
  color: #ccebfd;
 }
-.menu__list {
+.menu_list {
  display: flex;
  list-style: none;
 }
-.menu__list-item {
+.menu_list-item {
  margin-right: 20px;
 }
+.menu_list-link {
+ padding: 10px 20px;
+ font-size: 20px;
+ color: #dcf5fe;
+ cursor: pointer;
+ transition: all 0.3s;
+}
+
 
 
 
