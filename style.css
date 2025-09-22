@@ -19,6 +19,7 @@ footer {
 }
 .footerdiv{
   max-width: 960px;
+  text-align: center;
 }
 .container {
 box-sizing: border-box;
@@ -68,6 +69,7 @@ tr:nth-child(odd) {
 .tablitsa {
   margin-left: 20px;
 }
+
 
 
 
