@@ -53,11 +53,13 @@ tr:nth-child(odd) {
   background-color: #e0e0e0;
 }
 .forma {
+  margin-top: 20px;
   margin-left: 20px;
 }
 .tablitsa {
   margin-left: 20px;
 }
+
 
 
 
