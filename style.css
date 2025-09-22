@@ -44,12 +44,7 @@ width: 100%;
  cursor: pointer;
  transition: all 0.3s;
 }
-table {
-  table-layout: fixed;
-  width: 100%;
-  border-collapse: collapse;
-  border: 3px solid purple;
-}
+
 
 
 
