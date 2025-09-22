@@ -2,8 +2,8 @@
 
 .container {
  max-width: 1190px;
- padding: 0 15px; /* Увеличиваем боковые отступы */
- margin: 0 auto; /* Центрируем контейнер по горизонтали */
+ padding: 0 15px;
+ margin: 0 auto;
 }
 .header {
  padding-top: 30px;
@@ -33,6 +33,7 @@
  cursor: pointer;
  transition: all 0.3s;
 }
+
 
 
 
