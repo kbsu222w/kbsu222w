@@ -5,7 +5,11 @@ body {
 a {
  text-decoration: none;
 }
-
+.logo{
+  width = "110";
+  height = "110";
+  padding-left: 30px;
+}
 header {
  width: 100%;
  background-color: #ccebfd;
@@ -55,6 +59,7 @@ tr:nth-child(odd) {
 .tablitsa {
   margin-left: 20px;
 }
+
 
 
 
