@@ -28,6 +28,7 @@ width: 100%;
  text-transform: uppercase;
  font-size: 28px;
  font-weight: 900;
+ margin-left: 20px;
 
 }
 .menu_list {
@@ -43,6 +44,7 @@ width: 100%;
  cursor: pointer;
  transition: all 0.3s;
 }
+
 
 
 
