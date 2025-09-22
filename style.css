@@ -61,10 +61,13 @@ tr:nth-child(odd) {
   margin-top: 20px;
   margin-left: 20px;
   margin-bottom: 20px;
+  border: 1px;
 }
 .tablitsa {
   margin-left: 20px;
+  boder: 1px;
 }
+
 
 
 
