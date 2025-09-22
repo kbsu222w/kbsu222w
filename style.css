@@ -19,6 +19,14 @@
  font-weight: 900;
  color: #ccebfd;
 }
+.menu__list {
+ display: flex;
+ list-style: none;
+}
+.menu__list-item {
+ margin-right: 20px;
+}
+
 
 
 
