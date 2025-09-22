@@ -52,6 +52,12 @@ tr:nth-child(even) {
 tr:nth-child(odd) {
   background-color: #e0e0e0;
 }
+.forma {
+  margin-left: 20px;
+}
+.links {
+  margin-left: 20px;
+}
 
 
 
