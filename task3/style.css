@@ -80,10 +80,12 @@ tr:nth-child(odd) {
   flex-direction: row;
   max-width:960px;    
 }
-.content{flex-direction: row;}
-  .tablitsa{ margin-top: 0px;}
+.content{display: block;}
+  
+.tablitsa{ margin-top: 0px;}
   
 }
+
 
 
 
