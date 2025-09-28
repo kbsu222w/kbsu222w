@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <title>Сайт</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header class="header">
+  <div class="container">
+    <div class = "inner">
+      <img class = "logo" src ="logo.png" height="110" width="110" alt="logo">
+            <h1>Название сайта</h1>
+      <nav class="menu">
+           <ul class="menu_list">
+             <li class="menu_list-item">
+               <a class="menu_list-link" href="#">Первая страница</a>
+             </li>
+             <li class="menu_list-item">
+               <a class="menu_list-link" href="#">Вторая страница</a>
+             </li>
+             <li class="menu_list-item">
+               <a class="menu_list-link" href="#">Третья страница</a>
+             </li>
+           </ul>
+         </nav>
+    </div>
+  </div>
+</header>
+
+    <ul>
+<li><a href="http://www.kubsu.ru/index.php">kubsuHTTP</a></li>
+<li><a href="https://www.kubsu.ru/index.php">kubsuHTTPS</a></li>
+<li><a href="https://www.kubsu.ru/index.php"><img src="kubsupng.png" alt="Кубгу"></a></li>
+<li><a href="innerPage/inner.html">Внутренняя страница</a></li>
+<li><a href="">Главная страница</a></li>
+<li><a href="#id">Фрагмент текущей страницы</a></li>
+<li><a href="" id ="three" rel="" ping ="">Ссылка с тремя параметрами</a></li>
+<li><a href="" id="index">Ссылка с параметром id</a></li>
+<li><a href="page.html">Страница в текущем каталоге</a></li>
+<li><p>Вуз классического университетского образования,
+  в котором гармонично сочетаются естественно-научные и гуманитарные направления. 
+  Благодаря успехам и достижениям в образовании,
+  научно-исследовательской и воспитательной деятельности <a href="https://www.kubsu.ru/index.php">КубГУ</a> по праву считается одним из ведущих вузов юга России.</p></li>
+<li><a href="http://www.kubsu.ru/index.php#section-footer">Фрагмент страницы стороннего сайта</a></li>
+<li><img src="image.png" alt="image" usemap="#image_map">
+<map name="image_map">
+  <area shape="circle" coords="124,50,24" href="page.html" alt = "Круг">
+  <area coords="24,29,69,68" href="page.html" alt = "Прямоугольник">
+</map></li>
+<li><a href="">Ссылка с пустым href</a></li>
+<li><a>Ссылка без href</a></li>
+<li><a href="page.html" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
+<li><!--noindex--><a href="">Ссылка, запрещенная для индексации поисковиками</a><!--/noindex--></li>
+<li><ol>
+  <li><a href="page.html" title="Первая ссылка">Ссылка 1</a></li>
+  <li><a href="page.html" title="Вторая ссылка">Ссылка 2</a></li>
+  <li><a href="page.html" title="Третья ссылка">Ссылка 3</a></li>
+</ol></li>
+ <li><a href="ftp://login:123456@https://kbsu222w.github.io/kbsu222w/index.html">Ссылка на файл на сервере FTP с авторизацией</a></li>
+      </ul>
+
+    
+    <table class="tablitsa">
+      <thead>
+      <tr>
+        <th>Колонка 1</th>
+        <th>Колонка 2</th>
+        <th>Колонка 3</th>
+        <th>Колонка 4</th>
+      </tr>
+        </thead>
+      <tr>
+        <td rowspan = "2">Ячейка 11 <br> объединенная с 21</td>
+        <td>Ячейка 12</td>
+        <td>Ячейка 13</td>
+        <td>Ячейка 14</td>
+      </tr>
+      <tr>
+        
+        <td>Ячейка 22</td>
+        <td>Ячейка 23</td>
+        <td>Ячейка 24</td>
+      </tr>
+      <tr>
+        <td>Ячейка 31</td>
+        <td colspan="2">Ячейка 32 объединенная с 33</td>
+        <td>Ячейка 34</td>
+      </tr>
+      <tr>
+        <td>Ячейка 41</td>
+        <td>Ячейка 42</td>
+        <td>Ячейка 43</td>
+        <td>Ячейка 44</td>
+      </tr>
+      <tr>
+        <td>Ячейка 51</td>
+        <td>Ячейка 52</td>
+        <td>Ячейка 53</td>
+        <td>Ячейка 54</td>
+      </tr>
+      <tr>
+        <td>Ячейка 61</td>
+        <td>Ячейка 62</td>
+        <td>Ячейка 63</td>
+        <td>Ячейка 64</td>
+      </tr>
+    </table>
+
+
+    
+  <form action="/"
+      method="POST" class="forma">
+
+      <label>
+        ФИО:<br />
+        <input name="field-name-1"
+          value="" />
+      </label><br />
+      <label for="phone">
+      Номер телефона:<br />
+      <input
+      type="tel"
+      id="phone"
+      name="phone"
+      pattern="\+?[0-9\s\-\(\)]+"
+      required />
+      </label><br />
+
+      <label>
+         Email:<br />
+        <input name="field-email"
+          type="email"
+          placeholder="Введите вашу почту" />
+      </label><br />
+
+      <label>
+        Дата рождения:<br />
+        <input name="field-date"
+          value="2000-01-01"
+          type="date" />
+      </label><br />
+       Пол:<br />
+      <label><input type="radio"
+        name="radio-group-1" value="Значение1" />
+        М</label>
+      <label><input type="radio"
+        name="radio-group-1" value="Значение2" />
+        Ж</label><br />
+         <label>
+        Любимый язык программирования:
+        <br />
+        <select name="field-name-4[]"
+          multiple="multiple">
+          <option value="Значение1">Pascal</option>
+          <option value="Значение2">C</option>
+          <option value="Значение3">C++</option>
+          <option value="Значение4">JavaScript</option>
+          <option value="Значение5">PHP</option>
+          <option value="Значение6">Python</option>
+          <option value="Значение7">Java</option>
+          <option value="Значение8">Haskel</option>
+          <option value="Значение9">Clojure</option>
+          <option value="Значение10"> Prolog</option>
+          <option value="Значение11">Scala</option>
+        </select>
+      </label><br />
+
+      <label>
+        Биография:<br />
+        <textarea name="field-name-2">Введите текст</textarea>
+      </label><br />
+
+      <label id="id"><input type="checkbox"
+        name="check-1" />
+        С контрактом ознакомлен(а)</label><br />
+      <input type="submit" value="Сохранить" />
+    </form>
+
+    <footer>(с) Роман Ким</footer>
+  </body>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
