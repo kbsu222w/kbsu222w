@@ -1,12 +1,12 @@
 .header {
-  display: inline-flex; text-align: right;
+  display: flex;
 }
 .menu{display: flex; text-align: center;}
 .menu_list{
   flex-direction: column;
   max-width:960px;
 }
-h1{text-align: right;}
+h1{padding-left: 1000px;}
 body {
   padding: 0;
   margin: 0;
@@ -54,6 +54,7 @@ tr:nth-child(odd) {
 .tablitsa {
   margin-left: 20px;
 }
+
 
 
 
