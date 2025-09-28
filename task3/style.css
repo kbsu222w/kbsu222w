@@ -1,7 +1,8 @@
-.main {
+.header {
   display: flex;
   flex-direction: column;
 }
+.manu{flex: 1; order: 1;}
 
 body {
   padding: 0;
@@ -62,6 +63,7 @@ tr:nth-child(odd) {
 .tablitsa {
   margin-left: 20px;
 }
+
 
 
 
