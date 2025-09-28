@@ -2,13 +2,13 @@
 .header {
   display: flex;
   justify-content: space-between;
+  margin-right: 20px;
 }
-.menu{display: flex; text-align: center; margin-top:-1px;}
+.menu{display: flex; text-align: center; margin-top:-10px;}
 .menu_list{
   flex-direction: column;
   max-width:960px;
 }
-h1 {padding-right: 50xp;}
 body {
   padding: 0;
   margin: 0;
@@ -63,6 +63,7 @@ tr:nth-child(odd) {
   order: 1;
 }
 .links{order: 2;}
+
 
 
 
