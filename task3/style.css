@@ -15,10 +15,7 @@ a {
 .logo{
   margin-left: 30px;
 }
-header {
- width: 100%;
- background-color: #ccebfd;
-}
+
 footer {
  width: 100%;
  background-color: #C0C0C0;
@@ -26,6 +23,7 @@ footer {
 }
 .container {
 width: 100%;
+   background-color: #ccebfd;
 }
 .menu {
  max-width:960px;
@@ -61,6 +59,7 @@ tr:nth-child(odd) {
 .tablitsa {
   margin-left: 20px;
 }
+
 
 
 
