@@ -64,7 +64,7 @@ tr:nth-child(odd) {
 }
 .links{order: 2;}
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .header{display:block; margin: 0px;}
   body {
   padding: 0;
@@ -81,6 +81,7 @@ a {
 
 
 }
+
 
 
 
