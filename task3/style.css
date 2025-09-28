@@ -1,5 +1,5 @@
 .header {
-  display: flex;
+  display: inline-flex
 }
 .menu{display: flex; text-align: center;}
 .menu_list{
@@ -54,6 +54,7 @@ tr:nth-child(odd) {
 .tablitsa {
   margin-left: 20px;
 }
+
 
 
 
