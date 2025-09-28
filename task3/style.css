@@ -64,23 +64,9 @@ tr:nth-child(odd) {
 }
 .links{order: 2;}
 
-@media screen and (min-width: 1000px) {
-  .header{display:block; margin: 0px;}
-  body {
-  padding: 0;
-  margin: 0;
-}
-  .menu{display: flex;
- justify-content: space-between;
- align-items: center;  max-width:960px; flex-direction: row;}
-a {
- text-decoration: none;
-}
-.content{display: block;}
-
-
 
 }
+
 
 
 
