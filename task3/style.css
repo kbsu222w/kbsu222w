@@ -5,10 +5,7 @@
   margin-right: 50px;
 }
 .menu{display: flex; text-align: center; margin-top:-15px;}
-.menu_list{
-  flex-direction: column;
-  max-width:960px;
-}
+
 body {
   padding: 0;
   margin: 0;
@@ -37,6 +34,8 @@ width: 100%;
  display: flex;
  list-style: none;
  font-weight: bold;
+ flex-direction: column;
+ max-width:960px;
 }
 
 .menu_list-link {
@@ -69,7 +68,7 @@ tr:nth-child(odd) {
   .container{ display: flex;
  justify-content: space-between;
  align-items: center;}
-  .header{display:block; margin: 0px;}
+  .header{display:inline; margin: 0px;}
   body {
   padding: 0;
   margin: 0;
@@ -83,6 +82,7 @@ tr:nth-child(odd) {
 }
 
 .content{display: block;}
+
 
 
 
