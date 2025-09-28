@@ -77,10 +77,13 @@ tr:nth-child(odd) {
   .menu{display: flex;
  justify-content: space-between;
  align-items: center;  max-width:960px; flex-direction: row;}
-a {
- text-decoration: none;
+  .menu_list{
+  flex-direction: row;
+  max-width:960px;
 }
+
 .content{display: block;}
+
 
 
 
