@@ -78,10 +78,14 @@ tr:nth-child(odd) {
  align-items: center;  max-width:960px; flex-direction: row;}
   .menu_list{
   flex-direction: row;
-  max-width:960px;
+  max-width:960px;    
+}
+.content{flex-direction: row;}
+  .tablitsa{ margin-top: 0px;}
+  
 }
 
-.content{display: block;}
+
 
 
 
