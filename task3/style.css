@@ -1,5 +1,6 @@
 .header {
   display: flex;
+  flex-direction: row;
 }
 .menu{display: flex; flex-direction: column;}
 
@@ -59,6 +60,7 @@ tr:nth-child(odd) {
 .tablitsa {
   margin-left: 20px;
 }
+
 
 
 
