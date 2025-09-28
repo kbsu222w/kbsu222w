@@ -54,9 +54,12 @@ tr:nth-child(odd) {
 }
 .tablitsa {
   display:flex;
+  flex-direction: column;
   margin-left: 20px;
 }
-.links{display:flex;}
+.links{display:flex;
+      flex-direction: column;}
+
 
 
 
