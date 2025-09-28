@@ -51,6 +51,7 @@ tr:nth-child(odd) {
   background-color: #e0e0e0;
 }
 .forma {
+  order: 3;
   margin-top: 20px;
   margin-left: 20px;
   margin-bottom: 20px;
@@ -60,6 +61,7 @@ tr:nth-child(odd) {
   order: 1;
 }
 .links{order: 2;}
+
 
 
 
