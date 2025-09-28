@@ -5,9 +5,7 @@
 .menu{display: flex; text-align: center;}
 .menu_list{
   flex-direction: column;
-  margin-bottom: 60px;
   max-width:960px;
-  padding: 20px;
 }
 
 body {
@@ -60,6 +58,7 @@ tr:nth-child(odd) {
 .tablitsa {
   margin-left: 20px;
 }
+
 
 
 
