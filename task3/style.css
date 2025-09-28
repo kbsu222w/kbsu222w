@@ -30,11 +30,7 @@ width: 100%;
 .menu {
  max-width:960px;
 }
-.inner {
- display: flex;
- justify-content: space-between;
- align-items: center;
-}
+
 h1 {
   margin: 30px;
 }
@@ -64,6 +60,7 @@ tr:nth-child(odd) {
 .tablitsa {
   margin-left: 20px;
 }
+
 
 
 
