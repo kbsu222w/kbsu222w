@@ -1,6 +1,6 @@
 .header {
   display: flex;
-  flex-direction: row;
+  text-align: right;
 }
 .menu{display: flex; text-align: center;}
 .menu_list{
@@ -55,6 +55,7 @@ tr:nth-child(odd) {
 .tablitsa {
   margin-left: 20px;
 }
+
 
 
 
