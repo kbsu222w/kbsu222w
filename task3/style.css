@@ -14,7 +14,7 @@ body {
   margin: 0;
 }
 
-.content{display: inline-flex; flex-direction: column;}
+.content{display: flex; flex-direction: column;}
 
 a {
  text-decoration: none;
@@ -63,6 +63,7 @@ tr:nth-child(odd) {
   order: 1;
 }
 .links{order: 2;}
+
 
 
 
