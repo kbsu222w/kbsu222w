@@ -3,7 +3,7 @@
   flex-direction: row;
 }
 .menu{display: flex; text-align:center;}
-.menu-list{text-align: center;}
+.menu_list{text-align: center;}
 
 body {
   padding: 0;
@@ -59,6 +59,7 @@ tr:nth-child(odd) {
 .tablitsa {
   margin-left: 20px;
 }
+
 
 
 
