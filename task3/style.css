@@ -65,7 +65,7 @@ tr:nth-child(odd) {
 .links{order: 2;}
 
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 800px) {
   .container{ display: flex;
  justify-content: space-between;
  align-items: center;}
@@ -81,6 +81,7 @@ a {
  text-decoration: none;
 }
 .content{display: block;}
+
 
 
 
