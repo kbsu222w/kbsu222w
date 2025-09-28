@@ -83,8 +83,10 @@ tr:nth-child(odd) {
 .content{display: block;}
   
 .tablitsa{ margin-top: 0px;}
-  
+h1{margin-left: 200px;
+  margin-top: 50px;}
 }
+
 
 
 
