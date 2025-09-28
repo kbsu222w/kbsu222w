@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
 }
-.menu{display: flex; text-align: center;}
+.menu{display: flex; text-align: center; margin-top:-50px;}
 .menu_list{
   flex-direction: column;
   max-width:960px;
@@ -63,6 +63,7 @@ tr:nth-child(odd) {
   order: 1;
 }
 .links{order: 2;}
+
 
 
 
