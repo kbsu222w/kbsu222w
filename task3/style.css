@@ -56,11 +56,13 @@ tr:nth-child(odd) {
 }
 .tablitsa {
   display:flex;
+  flex: 1;
   flex-direction: column;
   margin-left: 20px;
 }
 .links{display:flex;
       flex-direction: column;}
+
 
 
 
