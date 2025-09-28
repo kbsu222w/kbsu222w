@@ -29,6 +29,7 @@ width: 100%;
 }
 .menu {
  max-width:960px;
+ text-align: center;
 }
 
 h1 {
@@ -60,6 +61,7 @@ tr:nth-child(odd) {
 .tablitsa {
   margin-left: 20px;
 }
+
 
 
 
