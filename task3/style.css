@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
 }
-.menu{display: flex; margin-left: auto; margin-right: auto;}
+.menu{display: flex; margin-left: auto; margin-right: auto; max-width:960px;}
 
 
 body {
@@ -24,10 +24,6 @@ footer {
 .container {
 width: 100%;
    background-color: #ccebfd;
-}
-.menu {
- max-width:960px;
- text-align: center;
 }
 
 h1 {
@@ -59,6 +55,7 @@ tr:nth-child(odd) {
 .tablitsa {
   margin-left: 20px;
 }
+
 
 
 
