@@ -3,6 +3,7 @@
 
   <head>
     <title>Сайт</title>
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   </head>
@@ -22,29 +23,45 @@
     <div class="container-fluid" style = "background-color: #ccebfd;">
         <div class="row">
 
-            <div class="col-12 col-md-4" m-5 py-3>
+            <div class="col-12 col-md-4 col-lg-4">
                 <img src="logo.png"  height="110" width="110" alt="logo">
             </div>
-            
-            
-            <div class="col-12 col-md-4 text-center" m-5 py-3>
+                                              <div class="col-12 col-md-4 col-lg-4 text-center my-auto fs-2">
                 <span class="fw-bold">Название сайта</span>
             </div>
-            
-            
-            <div class="col-12 col-md-4" m-5 py-3>
-                <div class="d-flex justify-content-md-end">
-                    <a href="#" class="text-decoration-none me-3">Первая страница</a>
-                    <a href="#" class="text-decoration-none me-3">Вторая страница</a>
-                    <a href="#" class="text-decoration-none">Третья страница</a>
-                </div>
+            <div class="col-12 col-md-4 col-lg-4 d-none d-md-block my-auto">
+              <div class="d-flex justify-content-end">
+                    <a href="#" class="text-decoration-none me-3 fs-6">Первая страница</a>
+                    <a href="#" class="text-decoration-none me-3 fs-6">Вторая страница</a>
+                    <a href="#" class="text-decoration-none me-3 fs-6">Третья страница</a>
+                    </div>
+
             </div>
+
         </div>
+                            <div class="d-flex flex-column d-block d-md-none">
+                    <div class="d-flex fs-5">
+                    <a href="#" class="text-decoration-none me-3">Первая страница</a>
+                </div>
+
+
+                    <div class="d-flex fs-5">
+                    <a href="#" class="text-decoration-none me-3">Вторая страница</a>
+                </div>
+
+
+                    <div class="d-flex fs-5">
+                      <a href="#" class="text-decoration-none me-3">Третья страница</a>
+            </div>
+                                
+                          </div>
+
     </div>
 
 
 
-<div class="content">
+<div class ="d-flex flex-column">
+  <div class = "order-sm-2 order-md-1 order-lg-1  ms-2">
     <ul class = "links">
 <li><a href="http://www.kubsu.ru/index.php">kubsuHTTP</a></li>
 <li><a href="https://www.kubsu.ru/index.php">kubsuHTTPS</a></li>
@@ -76,9 +93,10 @@
 </ol></li>
  <li><a href="ftp://login:123456@https://kbsu222w.github.io/kbsu222w/index.html">Ссылка на файл на сервере FTP с авторизацией</a></li>
       </ul>
+ </div>
 
-    
-    <table class="tablitsa">
+      <div class ="order-sm-1 order-md-2 order-lg-2  ms-2">
+    <table class="table table-striped">
       <thead>
       <tr>
         <th>Колонка 1</th>
@@ -123,9 +141,9 @@
         <td>Ячейка 64</td>
       </tr>
     </table>
+</div>
 
-
-    
+<div class="order-sm-3 order-md-3 order-lg-3  ms-2"
   <form action="/"
       method="POST" class="forma">
 
@@ -195,7 +213,7 @@
     </form>
 </div>
 
-    <footer>(с) Роман Ким</footer>
+    <footer class = "order-sm-4 order-md-4 order-lg-4">(с) Роман Ким</footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
 
