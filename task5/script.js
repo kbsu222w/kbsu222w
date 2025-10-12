@@ -11,10 +11,19 @@ function click1() {
   else if (num == "t3") r.innerHTML = "Стоимость заказа: "+f1[0].value * 300;
   console.log(f2[0].value);
   return false;
-}})
+}
+const button = document.getElementById('button1');
+    if (button) {
+        button.addEventListener('click', click1);
+    }
+
+})
+
+
 
                       
                           
+
 
 
 
