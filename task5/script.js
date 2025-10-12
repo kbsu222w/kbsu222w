@@ -1,6 +1,6 @@
 
 
-document.addEventListener("DOMContentLoaded", click1() {
+document.addEventListener("DOMContentLoaded", function click1() {
   let f2 = document.getElementsByName("select1");
   let f1 = document.getElementsByName("field1");
   let r = document.getElementById("result");
@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", click1() {
 
                       
                           
+
 
 
 
