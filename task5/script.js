@@ -13,7 +13,7 @@ function click1() {
   return false;
 }
 document.addEventListener('DOMContentLoaded', function() {
-const button1 = document.getElementById('button1');
+let button1 = document.getElementById('button1');
     if (button1) {
         button1.addEventListener('click', click1);
     }
@@ -24,6 +24,7 @@ const button1 = document.getElementById('button1');
 
                       
                           
+
 
 
 
