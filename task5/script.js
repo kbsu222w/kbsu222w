@@ -14,7 +14,7 @@ function click1() {
 }
 const button = document.getElementById('button1');
     if (button) {
-        button.addEventListener('click', click1, capture);
+        button.addEventListener('click', click1, {capture = "true"});
     }
 
 })
@@ -23,6 +23,7 @@ const button = document.getElementById('button1');
 
                       
                           
+
 
 
 
