@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+
 function click1() {
   let f2 = document.getElementsByName("select1");
   let f1 = document.getElementsByName("field1");
@@ -12,9 +12,10 @@ function click1() {
   console.log(f2[0].value);
   return false;
 }
+document.addEventListener('DOMContentLoaded', function() {
 const button = document.getElementById('button1');
     if (button) {
-        button.addEventListener('click', click1, {capture = "true"});
+        button.addEventListener('click', click1);
     }
 
 })
@@ -23,6 +24,7 @@ const button = document.getElementById('button1');
 
                       
                           
+
 
 
 
