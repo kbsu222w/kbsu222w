@@ -1,4 +1,4 @@
-
+document.addEventListener('DOMContentLoaded', function() {
 function click1() {
   let f2 = document.getElementsByName("select1");
   let f1 = document.getElementsByName("field1");
@@ -11,10 +11,11 @@ function click1() {
   else if (num == "t3") r.innerHTML = "Стоимость заказа: "+f1[0].value * 300;
   console.log(f2[0].value);
   return false;
-}
+}})
 
                       
                           
+
 
 
 
