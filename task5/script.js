@@ -15,7 +15,8 @@ function click1() {
   return false;
 }
 
-document.addEventListener("DOMContentLoaded", ready);
+document.addEventListener("DOMContentLoaded", click1);
+
 
 
 
