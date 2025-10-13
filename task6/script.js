@@ -12,6 +12,18 @@ function updatePrice() {
   // Скрываем или показываем радиокнопки.
   let radioDiv = document.getElementById("radios");
   radioDiv.style.display = (select.value == "3" ? "block" : "none");
+
+
+  let radios2 = document.getElementsByName("prodOptions2");
+  radios2.forEach(function(radio) {
+    if (radio.checked) {
+      let servicePrice = prices.serviceType[radio.value];
+      if (servicePrice !== undefined) {
+        price *= servicePrice;
+      }
+    }
+  });
+
   
   // Смотрим какая товарная опция выбрана.
   let radios = document.getElementsByName("prodOptions");
@@ -19,7 +31,7 @@ function updatePrice() {
     if (radio.checked) {
       let optionPrice = prices.prodOptions[radio.value];
       if (optionPrice !== undefined) {
-        price *= optionPrice;
+        price += optionPrice;
       }
     }
   });
@@ -40,7 +52,7 @@ function updatePrice() {
       }
     }
   });}
-  
+
   else {
     checkboxes.forEach(function(checkbox) {
     checkbox.checked = '';
@@ -56,9 +68,14 @@ function updatePrice() {
 function getPrices() {
   return {
     prodTypes: [1000, 2000, 3000],
+    serviceType: {
+        opt1: 1,
+        opt2: 2,
+        opt3: 3,
+    },
     prodOptions: {
-      option2: 2,
-      option3: 3,
+      option2: 200,
+      option3: 300,
     },
     prodProperties: {
       prop1: 1,
