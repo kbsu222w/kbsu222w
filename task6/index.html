@@ -1,40 +1,44 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="generator" content="GitLab Pages">
-    <title>Plain HTML site using GitLab Pages</title>
-    <link rel="stylesheet" href="style.css">
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
     <script src="script.js"></script>
-  </head>
-  <body>
-  
-  <div id="prodPrice">Выберите тип товара</div>
+</head>
+<body>
+    <form id="calculatorForm">
+        <div>
+            <label for="quantity">Количество:</label>
+            <input type="number" id="quantity" min="1" value="1">
+        </div>
 
-  <form>
-    <input placeholder="Введите количество"> <br/>
-    <div id="radios2">
-      <label><input type="radio" name="prodOptions2" value="opt1"> Услуга 1</label>
-      <label><input type="radio" name="prodOptions2" value="opt2"> Услуга 2</label>
-      <label><input type="radio" name="prodOptions2" value="opt3"> Услуга 3</label>
-    </div>
-    Тип товара:
-    <select name="prodType">
-      <option value="1">Product 1</option>
-      <option value="2">Product 2</option>
-      <option value="3">Product 3</option>
-    </select>
-    <div id="radios">
-      <label><input type="radio" name="prodOptions" value="option1"> Опция 1</label>
-      <label><input type="radio" name="prodOptions" value="option2"> Опция 2</label>
-      <label><input type="radio" name="prodOptions" value="option3"> Опция 3</label>
-    </div>
-    <div id="checkboxes">
-      <label><input type="checkbox" name="prop1"> Свойство 1</label>
-      <label><input type="checkbox" name="prop2"> Свойство 2</label>
-    </div>
-  </form>
-  
-  </body>
+        <div>
+            <label>Тип товара:</label>
+            <div>
+                <label><input type="radio" name="prodType" value="t1" checked> Тип 1 - 500 руб.</label>
+                <label><input type="radio" name="prodType" value="t2"> Тип 2 - 1000 руб.</label>
+                <label><input type="radio" name="prodType" value="t3"> Тип 3 - 1500 руб.</label>
+            </div>
+        </div>
+
+        <div id="optionsGroup" style="display: none;">
+            <label for="options">Опции:</label>
+            <select id="options">
+              <option value="0">Без опции </option>
+                <option value="100">Опция 1 - 100 руб.</option>
+                <option value="200">Опция 2 - 200 руб.</option>
+            </select>
+        </div>
+
+        <div id="propertyGroup" style="display: none;">
+            <label>
+                <input type="checkbox" id="property">
+                Доп. свойство - 300 руб.
+            </label>
+        </div>
+
+        <div>
+            Итого: <span id="totalPrice">0</span> руб.
+        </div>
+    </form>
+</body>
 </html>
-

@@ -1,125 +1,64 @@
-function updatePrice() {
-  // Находим select по имени в DOM.
-  let s = document.getElementsByName("prodType");
-  let select = s[0];
-  let price = 0;
-  let prices = getPrices();
-  let priceIndex = parseInt(select.value) - 1;
-  if (priceIndex >= 0) {
-    price = prices.prodTypes[priceIndex];
-  }
-  
-  // Скрываем или показываем радиокнопки.
-  let radioDiv = document.getElementById("radios");
-  radioDiv.style.display = (select.value == "3" ? "block" : "none");
+document.addEventListener("DOMContentLoaded", function() {
+const quantityInput = document.getElementById("quantity");
+const prodTypeRadios = document.querySelectorAll("input[name='prodType']");
+const optionsGroup = document.getElementById("optionsGroup");
+const optionsSelect = document.getElementById("options");
+const propertyGroup = document.getElementById("propertyGroup");
+const propertyCheckbox = document.getElementById("property");
+const totalPriceElement = document.getElementById("totalPrice");
 
+const basePrices = {
+t1: 500,
+t2: 1000,
+t3: 1500
+};
 
-  let radios2 = document.getElementsByName("prodOptions2");
-  radios2.forEach(function(radio) {
-    if (radio.checked) {
-      let servicePrice = prices.serviceType[radio.value];
-      if (servicePrice !== undefined) {
-        price *= servicePrice;
-      }
-    }
-  });
-
-  
-  // Смотрим какая товарная опция выбрана.
-  let radios = document.getElementsByName("prodOptions");
-  radios.forEach(function(radio) {
-    if (radio.checked) {
-      let optionPrice = prices.prodOptions[radio.value];
-      if (optionPrice !== undefined) {
-        price += optionPrice;
-      }
-    }
-  });
-
-  // Скрываем или показываем чекбоксы.
-  let checkDiv = document.getElementById("checkboxes");
-  checkDiv.style.display = (select.value == "3" ? "none" : "block");
-    let checkboxes = document.querySelectorAll("#checkboxes input");
-  // Смотрим какие товарные свойства выбраны.
-  if (select.value !== "3"){
-  
-  checkboxes.forEach(function(checkbox) {
-
-    if (checkbox.checked) {
-      let propPrice = prices.prodProperties[checkbox.name];
-      if (propPrice !== undefined) {
-        price += propPrice;
-      }
-    }
-  });}
-
-  else {
-    checkboxes.forEach(function(checkbox) {
-    checkbox.checked = '';
-      
-    })
-  };
-
-  
-  let prodPrice = document.getElementById("prodPrice");
-  prodPrice.innerHTML = "Цена: " + price + " рублей";
-
-}
-function getPrices() {
-  return {
-    prodTypes: [1000, 2000, 3000],
-    serviceType: {
-        opt1: 1,
-        opt2: 2,
-        opt3: 3,
-    },
-    prodOptions: {
-      option2: 200,
-      option3: 300,
-    },
-    prodProperties: {
-      prop1: 1,
-      prop2: 2,
-    }
-  };
-}
-
-window.addEventListener('DOMContentLoaded', function (event) {
-  // Скрываем радиокнопки.
-  let radioDiv = document.getElementById("radios");
-  radioDiv.style.display = "none";
-  
-  // Находим select по имени в DOM.
-  let s = document.getElementsByName("prodType");
-  let select = s[0];
-  // Назначаем обработчик на изменение select.
-  select.addEventListener("change", function(event) {
-    let target = event.target;
-    console.log(target.value);
-    updatePrice();
-  });
-  
-  // Назначаем обработчик радиокнопок.  
-  let radios = document.getElementsByName("prodOptions");
-  radios.forEach(function(radio) {
-    radio.addEventListener("change", function(event) {
-      let r = event.target;
-      console.log(r.value);
-      updatePrice();
-    });
-  });
-
-    // Назначаем обработчик радиокнопок.  
-  let checkboxes = document.querySelectorAll("#checkboxes input");
-  checkboxes.forEach(function(checkbox) {
-    checkbox.addEventListener("change", function(event) {
-      let c = event.target;
-      console.log(c.name);
-      console.log(c.value);
-      updatePrice();
-    });
-  });
-
-  updatePrice();
+quantityInput.addEventListener("input", calculateTotal);
+optionsSelect.addEventListener("change", calculateTotal);
+propertyCheckbox.addEventListener("change", calculateTotal);
+prodTypeRadios.forEach((radio) => {
+radio.addEventListener("change", function() {
+    updateFormVisibility();
+    calculateTotal();
+});
 });
 
+updateFormVisibility();
+calculateTotal();
+
+function updateFormVisibility() {
+const selectedType = document.querySelector("input[name='prodType']:checked").value;
+
+optionsSelect.selectedIndex = 0;
+propertyCheckbox.checked = false;
+optionsGroup.style.display = "none";
+propertyGroup.style.display = "none";
+
+switch(selectedType) {
+    case "t2":
+        optionsGroup.style.display = "block";
+        break;
+    case "t3":
+        propertyGroup.style.display = "block";
+        break;
+}
+}
+
+function calculateTotal() {
+const quantity = parseInt(quantityInput.value) || 0;
+const selectedType = document.querySelector("input[name='prodType']:checked").value;
+
+let total = basePrices[selectedType] * quantity;
+
+if (selectedType === "t2") {
+    const optionPrice = parseInt(optionsSelect.value);
+    total += optionPrice * quantity;
+}
+
+if (selectedType === "t3" && propertyCheckbox.checked) {
+    total += 300 * quantity;
+}
+
+totalPriceElement.textContent = total;
+}
+});
