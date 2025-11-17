@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма обратной связи</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <button class="btn" id="openFormBtn">Оставить сообщение</button>
+        </div>
+    </div>
+
+    <div class="popup" id="popupForm">
+        <div class="form-container">
+            <div class="form-header">
+                <h2>Форма обратной связи</h2>
+                <button class="close-btn" id="closeFormBtn">&times;</button>
+            </div>
+            <div class="form-body">
+                <form id="feedbackForm">
+                    <div class="form-group">
+                        <label for="fullName">ФИО *</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="organization">Организация</label>
+                        <input type="text" id="organization" name="organization">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Сообщение *</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="consent" name="consent" required>
+                        <label for="consent">Я согласен с политикой обработки персональных данных *</label>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn" id="submitBtn">Отправить</button>
+                </form>
+                
+                <div class="message success" id="successMessage">
+                    Сообщение успешно отправлено!
+                </div>
+                
+                <div class="message error" id="errorMessage">
+                    Произошла ошибка при отправке сообщения.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
